@@ -1,10 +1,45 @@
-<script setup lang="ts"></script>
+<!-- javascript -->
+<script setup lang="ts">
+import AppHeader from './components/AppHeader.vue'
+</script>
 
+<!-- HTML -->
 <template>
-  <h1>You did it!</h1>
-  <p>
-
-  </p>
+  <AppHeader/>
 </template>
 
-<style scoped></style>
+<!-- CSS -->
+<style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+  'Poppins',
+  system-ui,
+  -apple-system,
+  BlinkMacSystemFont,
+  'Segoe UI',
+  Roboto, 'Oxygen',
+  Ubuntu,
+  Cantarell,
+  'Open Sans',
+  'Helvetica Neue',
+  sans-serif;
+}
+
+body {
+  background: #f3f4f6;
+}
+
+#app{
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2 100%);
+  padding: 2rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+</style> <!--  SCOPED HANYA UNTUK DI APP SAJA -->
