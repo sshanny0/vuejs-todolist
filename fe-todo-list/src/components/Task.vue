@@ -7,21 +7,27 @@
 </span>
 </label>
 </template>
-<script lang="ts">
-// options api
-import { defineComponent } from 'vue'
+<script setup lang="ts">
 
-export default defineComponent({
-  name: 'TaskComponent',
-    props: {
-      isChecked: {
-        type: Boolean,
-        required: false,
-        default: false
-      }
-    }
-  }
-)
+// // options api
+// import { defineComponent } from 'vue'
+
+// export default defineComponent({
+//   name: 'TaskComponent',
+//     props: {
+//       isChecked: {
+//         type: Boolean,
+//         required: false,
+//         default: false
+//       }
+//     }
+//   }
+// )
+
+// composition api
+defineProps<{
+  isChecked: boolean | false
+}>()
 
 </script>
 <style scoped>
